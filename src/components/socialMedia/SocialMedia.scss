@@ -8,6 +8,15 @@
   margin-bottom: 10px;
 }
 
+.icon-button img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: none;      // remove white/black inversion
+  border-radius: 0;  // remove circle crop
+}
+
+
 .icon-button i {
   color: $textColorDark;
   border-radius: 2.6rem;
@@ -88,3 +97,4 @@
     text-align: center;
   }
 }
+

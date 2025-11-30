@@ -1,6 +1,8 @@
 import React from "react";
 import "./SocialMedia.scss";
 import {socialMediaLinks} from "../../portfolio";
+import leetcodeIcon from "../../assets/images/leetcode.png";
+
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -103,6 +105,35 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
+      {/* {socialMediaLinks.leetcode ? (
+        <a
+          href={socialMediaLinks.leetcode}
+          className="icon-button medium"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-code"></i>
+          <span></span>
+        </a>
+      ) : null} */}
+      {socialMediaLinks.leetcode ? (
+        <a
+          href={socialMediaLinks.leetcode}
+          className="icon-button medium"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="leetcode-icon">
+            <img
+              src={leetcodeIcon}
+              alt="LeetCode"
+              style={{ width: "22px", height: "22px" }}
+            />
+          </i>
+        </a>
+      ) : null}
+
 
       {socialMediaLinks.stackoverflow ? (
         <a
